@@ -1,0 +1,17 @@
+# Python virtual environment
+backend/venv/
+
+# Node.js dependencies
+frontend/node_modules/
+
+# Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Environment variables
+*.env

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acne Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Acne Detection Model</h1>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload & Predict</button>
+    </form>
+
+    {% if result %}
+        <h2>Result: {{ result }}</h2>
+        <img src="{{ image_path }}" width="300">
+    {% endif %}
+</body>
+</html>
